@@ -1,0 +1,11 @@
+{
+	"name": "server",
+	"scripts": {
+		"start": "node server"
+	},
+	"dependencies": {
+		"express": "*",
+		"colors": "*",
+		"compression": "*"
+	}
+}

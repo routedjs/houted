@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../index.js"></script>
+</head>
+<body>
+    <button onclick="route()">Route</button>
+    <button onclick="replace()">Replace</button>
+    <script>
+        Houted(function (ctx) {
+            console.log(ctx)
+        })
+        var count = 1
+        function route () {
+            Houted.route("?page=" + count, {page: count ++});
+        }
+        function replace () {
+            Houted.replace("?page=" + count, {page: count ++});
+        }
+    </script>
+</body>
+</html>
