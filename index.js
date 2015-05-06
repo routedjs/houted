@@ -71,11 +71,12 @@
     }
 
     function Context (type) {
-        this.pathname = location.pathname,
-        this.search = location.search,
-        this.hash = location.hash,
-        this.href = location.href,
-        this.action = type,
+        this.pathname = location.pathname
+        this.path = location.pathname + location.search // for routedjs like property
+        this.search = location.search
+        this.hash = location.hash
+        this.href = location.href
+        this.action = type
         this.state = history.state
     }
 
